@@ -1,0 +1,27 @@
+html
+
+	body{
+		font-size:18px;
+	}
+	h1 {
+		color:rebeccapurple; 
+		font-family: Magneto, Helvetica, arial, sans-serif;
+		font-weight: bolder;
+		font-size:5em;
+	}
+	img.one {
+		width:440px;
+		height:440px;
+	}
+	ol li {
+		display:inline;
+		margin:0;
+		padding:0;
+	} 
+	ol {
+		margin:0;
+		padding:0;
+	}
+	body {
+		background: linear-gradient(-90deg, orangered, yellow);
+	}
