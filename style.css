@@ -1,31 +1,103 @@
-html
-    
-	body{
-		font-size:18px;
-		background: radial-gradient(circle, rgb(26, 163, 255), rgb(0, 0, 51));
-	}
-	h1 {
-		color: black; 
-		text-shadow: 7px 0px 2px rgb(26, 163, 255);
-		font-family: Magneto, Helvetica, arial, sans-serif;
-		font-weight: bolder;
-		font-size:5em;
-		background-color: transparent;
-		border:10px solid black;
-		padding:5px;
-	}
-	img.listimage {
-		width:300px;
-		height:300px;
-		background-color: rgb(26, 163, 255);
-		border:8px solid black;
-		padding:5px;
-		}
-	ol li {
-		display:inline;
-	}
-	img.centered {
-    	display: block;
-   		margin: 50px auto;
-   		text-align: center;
-	}
+
+body{
+	font-size:18px;
+}
+
+.gradient {
+	background: radial-gradient(circle, rgb(26, 163, 255), rgb(0, 0, 51));
+}
+h1 {
+	color: black; 
+	text-shadow: 7px 0px 2px rgb(26, 163, 255);
+	font-family: "Cooper Black", Helvetica, arial, sans-serif;
+	font-weight: bolder;
+	font-size:5em;
+	background-color: transparent;
+	border-top:10px solid black;
+	border-bottom: 10px solid black;
+	padding:5px;
+	text-align: center;
+}
+h2 {
+	color: black; 
+	text-shadow: 7px 0px 2px rgb(26, 163, 255);
+	font-family: "Cooper Black", Helvetica, arial, sans-serif;
+	font-weight: bolder;
+	font-size:5em;
+	background-color: transparent;
+	border-top:10px solid black;
+	border-bottom: 10px solid black;
+	padding:5px;
+	text-align: center;
+}
+img.listimage {
+	width: 300px;
+	height: 300px;
+	transition: width .2s linear, height .2s linear;
+	background-color: rgb(26, 163, 255);
+	border:8px solid black;
+	padding:8px;
+	border-radius: 40px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 39, 102, 1);
+	margin: 10px
+}
+img.listimage:hover {
+	background-color: #b3e0ff;
+	width:315px;
+	height:315px;
+	transition: width .2s linear, height .2s linear;
+}
+ol {
+	text-align: center;
+	display:block;
+}
+ol li{
+	display:inline;
+}
+ul.Header-Menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #0066ff;
+}
+ul li a:hover:not(.active) {
+	background-color: #111;
+}
+.active {
+    background-color: #0066ff;
+    border-right: 40px
+}
+.frontpageimage {	
+	border: 10px solid black;
+	height: 500px;
+	width: 700px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: rgb(26, 163, 255);
+}
+.whiteText {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
