@@ -3,9 +3,19 @@ body{
 	font-size:18px;
 }
 
-.gradient {
-	background: radial-gradient(circle, rgb(26, 163, 255), rgb(0, 0, 51));
+.homepagebody {
+	background: radial-gradient(#1aa3ff, #000033);
+	background-attachment: fixed; 
 }
+.webpagebody {
+	background: radial-gradient(#1aa3ff, #000033);
+	background-attachment: fixed; 
+}
+.contactbody {
+	background: radial-gradient(#1aa3ff, #000033);
+	background-attachment: fixed; 
+}
+
 h1 {
 	color: black; 
 	text-shadow: 7px 0px 2px rgb(26, 163, 255);
@@ -41,11 +51,29 @@ img.listimage {
 	box-shadow: 5px 5px 5px 5px rgba(0, 39, 102, 1);
 	margin: 10px
 }
+img.listimagekirk {
+	width: 300px;
+	height: 300px;
+	transition: width .2s linear, height .2s linear;
+	background-color: rgb(26, 163, 255);
+	border:8px solid black;
+	padding:8px;
+	border-radius: 40px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 39, 102, 1);
+	margin: 10px
+}
 img.listimage:hover {
 	background-color: #b3e0ff;
 	width:315px;
 	height:315px;
 	transition: width .2s linear, height .2s linear;
+}
+img.listimagekirk:hover {
+	background-color: #b3e0ff;
+	width:315px;
+	height:315px;
+	transition: width .2s linear, height .2s linear;
+	content: url(http://gifrific.com/wp-content/uploads/2012/09/William-Shatner-Slapping-Himself.gif);
 }
 ol {
 	text-align: center;
@@ -95,8 +123,13 @@ ul li a:hover:not(.active) {
 	margin: 0 auto;
 	padding: 10px;
 	background-color: rgb(26, 163, 255);
+
 }
-.whiteText {
+.frontpageimage:hover {
+	content: url(https://media.giphy.com/media/l9QngEShlDCJa/giphy.gif);
+}
+
+.home-page-text {
 	color: white;
 	font-size: 40px;
 	text-align: center;
